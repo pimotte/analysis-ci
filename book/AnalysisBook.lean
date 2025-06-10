@@ -74,8 +74,8 @@ def demoSite : Site := site AnalysisBook.Home /
   "sec52" sec52
   "sec53" sec53
   "sec54" sec54
-  "sec55" sec55
-  "sec5e" sec5e
+  -- "sec55" sec55
+  -- "sec5e" sec5e
 
 
 def main := blogMain theme demoSite
