@@ -2,6 +2,21 @@
 import VersoBlog
 import AnalysisBook.Home
 
+import AnalysisBook.Section_2_1
+import AnalysisBook.Section_2_2
+import AnalysisBook.Section_2_3
+import AnalysisBook.Section_2_e
+import AnalysisBook.Section_3_1
+import AnalysisBook.Section_4_1
+import AnalysisBook.Section_4_2
+import AnalysisBook.Section_4_3
+import AnalysisBook.Section_5_1
+import AnalysisBook.Section_5_2
+import AnalysisBook.Section_5_3
+import AnalysisBook.Section_5_4
+import AnalysisBook.Section_5_5
+import AnalysisBook.Section_5_e
+
 open Verso Genre Blog Site Syntax
 
 open Output Html Template Theme in
@@ -42,19 +57,8 @@ def theme : Theme := { Theme.default with
 
 
 
-def_literate_page sec21 from Analysis.Section_2_1 in "../analysis" as "The Peano Axioms"
 
-def_literate_page sec22 from Analysis.Section_2_2 in "../analysis" as "Addition"
-def_literate_page sec23 from Analysis.Section_2_3 in "../analysis" as "Multiplication"
-def_literate_page sec2e from Analysis.Section_2_epilogue in "../analysis" as "Equivalence of naturals"
-def_literate_page sec31 from Analysis.Section_3_1 in "../analysis" as "Fundamentals"
-def_literate_page sec41 from Analysis.Section_4_1 in "../analysis" as "The integers"
-def_literate_page sec42 from Analysis.Section_4_2 in "../analysis" as "The rationals"
-def_literate_page sec43 from Analysis.Section_4_3 in "../analysis" as "Absolute value and exponentiation"
-def_literate_page sec51 from Analysis.Section_5_1 in "../analysis" as "Cauchy sequences"
-def_literate_page sec52 from Analysis.Section_5_2 in "../analysis" as "Equivalent Cauchy sequences"
-def_literate_page sec53 from Analysis.Section_5_3 in "../analysis" as "The construction of the real numbers"
-def_literate_page sec54 from Analysis.Section_5_4 in "../analysis" as "Ordering the reals"
+
 
 def demoSite : Site := site AnalysisBook.Home /
   static "static" ← "./static_files"
@@ -70,6 +74,8 @@ def demoSite : Site := site AnalysisBook.Home /
   "sec52" sec52
   "sec53" sec53
   "sec54" sec54
+  "sec55" sec55
+  "sec5e" sec5e
 
 
 def main := blogMain theme demoSite
